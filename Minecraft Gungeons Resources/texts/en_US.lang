@@ -1,0 +1,29 @@
+entity.gungeon:bullet_kin.name=Bullet Kin
+item.spawn_egg.entity.gungeon:bullet_kin.name=Spawn Bullet Kin
+
+tile.gungeon:chamber_1_planks.name=Wood Planks (Keep of the Lead Lord)
+tile.gungeon:chamber_1_tile.name=Stone Tile (Keep of the Lead Lord)
+tile.gungeon:chamber_1_tile_small.name=Small Stone Tiles (Keep of the Lead Lord)
+tile.gungeon:chamber_1_wood_pillar.name=Wooden Pillar (Keep of the Lead Lord)
+tile.gungeon:chamber_1_bookshelf.name=Bookshelf (Keep of the Lead Lord)
+tile.gungeon:chamber_1_bricks.name=Stone Bricks (Keep of the Lead Lord)
+tile.gungeon:chamber_1_red_carpet_border.name=Red Border Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_red_carpet_center.name=Red Center Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_blue_carpet_border.name=Blue Border Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_blue_carpet_center.name=Blue Center Carpet (Keep of the Lead Lord)
+
+item.gungeon:copper_shell=Copper Shell
+item.gungeon:silver_shell=Silver Shell
+item.gungeon:gold_shell=Gold Shell
+
+item.gungeon:key=Key
+item.gungeon:blank=Blank
+item.gungeon:armor=Armor
+item.gungeon:hegemony_credit=Hegemony Credit
+
+item.gungeon:heart=Heart
+item.gungeon:half_heart=Half Heart
+
+item.gungeon:magnum=Magnum
+item.gungeon:magnum_empty=Magnum (Empty)
+item.gungeon:magnum_ammo=Magnum Ammo

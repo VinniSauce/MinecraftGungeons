@@ -1,0 +1,22 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"gungeon:bullet_kin": {
+				"volume": 0.6,
+				"pitch": 1.0,
+				"events": {
+					"death": {
+						"sound": "bullet_kin.death",
+						"volume": 0.6,
+						"pitch": [ 0.9, 1.1 ]
+					},
+					"hurt": {
+						"sound": "bullet_kin.hit",
+						"volume": 0.6,
+						"pitch": [ 0.9, 1.1 ]
+					}
+				}
+			}
+		}
+	}
+}

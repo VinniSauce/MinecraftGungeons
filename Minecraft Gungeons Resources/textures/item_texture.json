@@ -1,0 +1,40 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "magnum": {
+            "textures": "textures/items/guns/magnum"
+        },
+        "magnum_ammo": {
+            "textures": "textures/items/ammo/default"
+        },
+
+        "copper_shell": {
+            "textures": "textures/items/copper_shell"
+        },
+        "silver_shell": {
+            "textures": "textures/items/silver_shell"
+        },
+        "gold_shell": {
+            "textures": "textures/items/gold_shell"
+        },
+        "blank": {
+            "textures": "textures/items/blank"
+        },
+        "key": {
+            "textures": "textures/items/key"
+        },
+        "armor": {
+            "textures": "textures/items/armor"
+        },
+        "hegemony_credit": {
+            "textures": "textures/items/hegemony_credit"
+        },
+        "heart": {
+            "textures": "textures/items/heart"
+        },
+        "half_heart": {
+            "textures": "textures/items/half_heart"
+        }
+    },
+    "texture_name": "atlas.items"
+}

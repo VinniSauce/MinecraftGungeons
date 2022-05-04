@@ -1,0 +1,44 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gungeon:blank",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.blank"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "blank"
+				}
+			},
+			"minecraft:cooldown": {
+				"duration": 1,
+				"category": "blank"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "blank"
+			}
+		},
+		"events": {
+			"blank": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound blank.use",
+								"particle gungeon:blank_shockwave ~ ~1 ~",
+								"damage @e[type=!player,r=10] 5 entity_attack entity @p",
+								"clear @s gungeon:blank 0 1",
+								"kill @e[type=gungeon:enemy_bullet,r=10]"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

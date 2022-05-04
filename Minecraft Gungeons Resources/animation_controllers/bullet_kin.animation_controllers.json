@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bullet_kin.walk": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"blend_transition": 0.3,
+					"transitions": [
+						{
+							"move": "q.modified_move_speed > 0.025"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"blend_transition": 0.3,
+					"transitions": [
+						{
+							"idle": "q.modified_move_speed < 0.025"
+						}
+					]
+				}
+			}
+		}
+	}
+}

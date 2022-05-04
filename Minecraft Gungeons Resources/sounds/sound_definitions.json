@@ -1,0 +1,65 @@
+{
+  "bullet_kin.hit": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/bullet_kin/hurt_01",
+      "sounds/mob/bullet_kin/hurt_02"
+    ]
+  },
+  "bullet_kin.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/bullet_kin/death_01",
+      "sounds/mob/bullet_kin/death_02"
+    ]
+  },
+  "bullet_kin.step": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/metal_bullet_step_01",
+      "sounds/mob/metal_bullet_step_02",
+      "sounds/mob/metal_bullet_step_03"
+    ]
+  },
+  "heart.heal": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/heart_heal"
+    ]
+  },
+  "blank.use": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/blank_use"
+    ]
+  },
+  "magnum.reload": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/guns/magnum/reload_01"
+    ]
+  },
+  "magnum.empty": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/guns/magnum/empty_01",
+      "sounds/guns/magnum/empty_02",
+      "sounds/guns/magnum/empty_03"
+    ]
+  },
+  "magnum.fire": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/guns/magnum/shot_01",
+      "sounds/guns/magnum/shot_02"
+    ]
+  },
+  "magnum.shells": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/guns/magnum/shells_01",
+      "sounds/guns/magnum/shells_02",
+      "sounds/guns/magnum/shells_03"
+    ]
+  }
+}

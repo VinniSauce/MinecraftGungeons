@@ -1,0 +1,64 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shotgun_kin",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [-4, 4.5, -4], "size": [8, 14, 8], "uv": [0, 0]},
+						{"origin": [-4, 2.5, -4], "size": [8, 1, 8], "uv": [0, 22]},
+						{"origin": [-3, 3.5, -3], "size": [6, 1, 6], "uv": [0, 25]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "body",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [-3, 0, -1], "size": [2, 2, 2], "uv": [0, 26]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "body",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [2, 2, 2], "uv": [0, 26], "mirror": true}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "body",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-3, 5, -1], "size": [2, 2, 2], "uv": [0, 26]}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "right_arm",
+					"pivot": [-2, 5, 1],
+					"rotation": [45, 0, -180]
+				},
+				{
+					"name": "left_arm",
+					"parent": "body",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [1, 5, -1], "size": [2, 2, 2], "uv": [0, 26], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

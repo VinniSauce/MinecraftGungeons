@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gungeon:armor",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 1
+			},
+			"minecraft:armor": {
+				"protection": 20
+			},
+			"minecraft:icon": {
+				"texture": "armor"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.chestplate"
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 1
+			}
+		},
+		"events": {}
+	}
+}

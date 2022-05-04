@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Minecraft Gungeons (Resources)",
+		"description": "An adaptation of Enter the Gungeon",
+		"uuid": "64763422-ca23-7e11-63b5-469dfa0ce45a",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["VinniSauce", "Yanasakana"]
+	},
+	"modules": [
+		{
+			"description": "Minecraft Gungeons",
+			"type": "resources",
+			"uuid": "1534181c-8ff5-7a2e-86b7-2699851224ea",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "3de1067c-22ad-a688-f4e0-ccb344442bbb",
+			"version": [1, 0, 0]
+		}
+	]
+}

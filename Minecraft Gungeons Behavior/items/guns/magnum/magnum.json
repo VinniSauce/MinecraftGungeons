@@ -1,0 +1,70 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gungeon:magnum",
+			"category": "equipment"
+		},
+		"components": {
+			"tag:gun": {},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.b_class_guns"
+			},
+			"minecraft:icon": {
+				"texture": "magnum"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "fire"
+				}
+			},
+			"minecraft:cooldown": {
+				"duration": 0.25,
+				"category": "magnum"
+			},
+			"minecraft:durability": {
+				"max_durability": 6
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false
+		},
+		"events": {
+			"fire": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound magnum.fire"
+							]
+						},
+						"shoot": {
+							"projectile": "gungeon:magnum_bullet",
+							"launch_power": 1
+						},
+						"damage": {
+							"type": "none",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"condition": "q.remaining_durability(0) == 1",
+						"trigger": {
+							"event": "ammo_gone"
+						}
+					}
+				]
+			},
+			"ammo_gone": {
+				"sequence": [
+					{
+						"transform_item": {
+							"transform": "gungeon:magnum_empty"
+						}
+					}
+				]
+			}
+		}
+	}
+}

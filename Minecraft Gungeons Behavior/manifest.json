@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Minecraft Gungeons (Behaviors)",
+		"description": "An adaptation of Enter the Gungeon",
+		"uuid": "3de1067c-22ad-a688-f4e0-ccb344442bbb",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["VinniSauce", "Yanasakana"]
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "40fff2e9-7051-6c6f-5ae1-191052f0d0fa",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "64763422-ca23-7e11-63b5-469dfa0ce45a",
+			"version": [1, 0, 0]
+		}
+	]
+}

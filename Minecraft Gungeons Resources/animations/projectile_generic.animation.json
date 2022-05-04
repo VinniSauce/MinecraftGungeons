@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.projectile.aim": {
+			"loop": true,
+			"bones": {
+				"projectile": {
+					"rotation": ["-query.target_x_rotation", "-query.target_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

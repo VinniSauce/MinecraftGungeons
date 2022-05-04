@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "gungeon:heart"
+            }
+        ],
+        "result": {
+            "item": "gungeon:half_heart",
+            "count": 2
+        },
+        "description": {
+            "identifier": "gungeon:split_heart"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "num_mip_levels": 0,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "chamber_1_tile": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/chamber_1/tile_0"
+                    },
+                    {
+                        "path": "textures/blocks/chamber_1/tile_1"
+                    },
+                    {
+                        "path": "textures/blocks/chamber_1/tile_2"
+                    }
+                ]
+            }
+        },
+        "chamber_1_tile_small": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/chamber_1/tile_small_0"
+                    },
+                    {
+                        "path": "textures/blocks/chamber_1/tile_small_1"
+                    }
+                ]
+            }
+        },
+        "chamber_1_planks": {
+            "textures": "textures/blocks/chamber_1/planks"
+        },
+        "chamber_1_bricks": {
+            "textures": "textures/blocks/chamber_1/bricks"
+        },
+        "chamber_1_wood_pillar": {
+            "textures": "textures/blocks/chamber_1/wood_pillar"
+        },
+        "chamber_1_wood_pillar_top": {
+            "textures": "textures/blocks/chamber_1/wood_pillar_top"
+        },
+        "chamber_1_bookshelf": {
+            "textures": "textures/blocks/chamber_1/bookshelf"
+        },
+        "chamber_1_red_carpet_center": {
+            "textures": "textures/blocks/chamber_1/red_carpet_center"
+        },
+        "chamber_1_red_carpet_border": {
+            "textures": "textures/blocks/chamber_1/red_carpet_border"
+        },
+        "chamber_1_blue_carpet_center": {
+            "textures": "textures/blocks/chamber_1/blue_carpet_center"
+        },
+        "chamber_1_blue_carpet_border": {
+            "textures": "textures/blocks/chamber_1/blue_carpet_border"
+        }
+    }
+}
