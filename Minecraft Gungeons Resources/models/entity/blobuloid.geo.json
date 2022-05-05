@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.blobuloid",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 8, 10],
+							"uv": {
+								"north": {"uv": [24, 10], "uv_size": [10, 8]},
+								"east": {"uv": [34, 10], "uv_size": [10, 8]},
+								"south": {"uv": [34, 10], "uv_size": [10, 8]},
+								"west": {"uv": [34, 10], "uv_size": [10, 8]},
+								"up": {"uv": [34, 10], "uv_size": [-10, -10]},
+								"down": {"uv": [44, 10], "uv_size": [-10, -10]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
