@@ -2,12 +2,12 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "gungeon:bullet_kin",
+			"identifier": "gungeon:blue_shotgun_kin",
 			"materials": {
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/bullet_kin"
+				"default": "textures/entity/blue_shotgun_kin"
 			},
 			"scripts": {
 				"animate": [
@@ -21,12 +21,12 @@
 				"move_controller": "controller.animation.bullet_kin.walk"
 			},
 			"geometry": {
-				"default": "geometry.bullet_kin"
+				"default": "geometry.shotgun_kin"
 			},
 			"render_controllers": ["controller.render.default"],
 			"spawn_egg": {
 				"base_color": "#e0b95f",
-				"overlay_color": "#adb8bf"
+				"overlay_color": "#00ffff"
 			}
 		}
 	}

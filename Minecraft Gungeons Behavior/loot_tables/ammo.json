@@ -1,0 +1,100 @@
+{
+	"pools": [
+        {
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "gungeon:magnum"
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "gungeon:magnum_ammo",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 10
+                            }
+                        }
+                    ]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "gungeon:magnum_empty"
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "gungeon:magnum_ammo",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 10
+                            }
+                        }
+                    ]
+				}
+			]
+		},
+        {
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "gungeon:regular_shotgun"
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "gungeon:regular_shotgun_ammo",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 10
+                            }
+                        }
+                    ]
+				}
+			]
+		},
+        {
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "gungeon:regular_shotgun_empty"
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "gungeon:regular_shotgun_ammo",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 10
+                            }
+                        }
+                    ]
+				}
+			]
+		}
+	]
+}

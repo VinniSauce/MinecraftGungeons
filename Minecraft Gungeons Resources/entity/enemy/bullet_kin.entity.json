@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gungeon:bullet_kin",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/bullet_kin"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"holding_gun"
+				]
+			},
+			"animations": {
+				"move": "animation.bullet_kin.walk",
+				"holding_gun": "animation.bullet_kin.holding_gun",
+				"move_controller": "controller.animation.bullet_kin.walk"
+			},
+			"geometry": {
+				"default": "geometry.bullet_kin"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#e0b95f",
+				"overlay_color": "#c1ccd1"
+			}
+		}
+	}
+}

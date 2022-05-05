@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "gungeon:bullet_kin",
+			"identifier": "gungeon:veteran_bullet_kin",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -22,7 +22,7 @@
 				"priority": 4,
 				"attack_interval_min": 2,
 				"attack_interval_max": 2,
-				"attack_radius": 8
+				"attack_radius": 16
 			},
 			"minecraft:shooter": {
 				"def": "gungeon:enemy_bullet"

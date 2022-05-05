@@ -2,12 +2,21 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "gungeon:bullet_kin",
+			"identifier": "gungeon:blue_shotgun_kin",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
+			"minecraft:dead": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 1,
+					"causes_fire": false,
+					"destroy_affected_by_griefing": true
+				}
+			}
 		},
 		"components": {
 			"minecraft:experience_reward": {
@@ -20,19 +29,26 @@
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 4,
+				"burst_shots": 4,
+				"burst_interval": 0,
 				"attack_interval_min": 2,
 				"attack_interval_max": 2,
 				"attack_radius": 8
 			},
 			"minecraft:shooter": {
-				"def": "gungeon:enemy_bullet"
+				"def": "gungeon:enemy_shotgun_bullet"
 			},
 			"minecraft:collision_box": {
 				"width": 0.5,
-				"height": 0.9
+				"height": 1.2
 			},
 			"minecraft:type_family": {
-				"family": ["gundead", "bullet_kin", "monster", "mob"]
+				"family": [
+					"gundead",
+					"bullet_kin",
+					"monster",
+					"mob"
+				]
 			},
 			"minecraft:variant": {
 				"value": 0
@@ -43,6 +59,19 @@
 			},
 			"minecraft:damage_sensor": {
 				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_damage",
+										"value": "fatal"
+									}
+								]
+							},
+							"event": "minecraft:dead"
+						}
+					},
 					{
 						"on_damage": {
 							"filters": {
@@ -84,7 +113,7 @@
 			"minecraft:jump.static": {},
 			"minecraft:nameable": {},
 			"minecraft:equipment": {
-				"table": "loot_tables/entities/equipment/bullet_kin.json"
+				"table": "loot_tables/entities/equipment/shotgun_kin.json"
 			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {}
@@ -158,7 +187,13 @@
 			}
 		},
 		"events": {
-			
+			"minecraft:dead": {
+				"add": {
+					"component_groups": [
+						"minecraft:dead"
+					]
+				}
+			}
 		}
 	}
 }

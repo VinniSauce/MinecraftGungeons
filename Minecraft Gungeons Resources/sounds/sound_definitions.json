@@ -13,6 +13,20 @@
       "sounds/mob/bullet_kin/death_02"
     ]
   },
+  "shotgun_kin.hit": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/shotgun_kin/hurt_01",
+      "sounds/mob/shotgun_kin/hurt_02"
+    ]
+  },
+  "shotgun_kin.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/shotgun_kin/death_01",
+      "sounds/mob/shotgun_kin/death_02"
+    ]
+  },
   "bullet_kin.step": {
     "category": "hostile",
     "sounds": [
@@ -60,6 +74,19 @@
       "sounds/guns/magnum/shells_01",
       "sounds/guns/magnum/shells_02",
       "sounds/guns/magnum/shells_03"
+    ]
+  },
+  "regular_shotgun.fire": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/guns/regular_shotgun/shot_01",
+      "sounds/guns/regular_shotgun/shot_02"
+    ]
+  },
+  "regular_shotgun.reload": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/guns/regular_shotgun/reload_01"
     ]
   }
 }

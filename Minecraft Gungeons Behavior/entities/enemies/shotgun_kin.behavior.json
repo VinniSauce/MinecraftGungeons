@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "gungeon:bullet_kin",
+			"identifier": "gungeon:shotgun_kin",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -20,16 +20,18 @@
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 4,
-				"attack_interval_min": 2,
-				"attack_interval_max": 2,
+				"burst_shots": 4,
+				"burst_interval": 0,
+				"attack_interval_min": 4,
+				"attack_interval_max": 4,
 				"attack_radius": 8
 			},
 			"minecraft:shooter": {
-				"def": "gungeon:enemy_bullet"
+				"def": "gungeon:enemy_shotgun_bullet"
 			},
 			"minecraft:collision_box": {
 				"width": 0.5,
-				"height": 0.9
+				"height": 1.2
 			},
 			"minecraft:type_family": {
 				"family": ["gundead", "bullet_kin", "monster", "mob"]
@@ -56,8 +58,8 @@
 				]
 			},
 			"minecraft:health": {
-				"value": 15,
-				"max": 15
+				"value": 30,
+				"max": 30
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:hurt_on_condition": {
@@ -84,7 +86,7 @@
 			"minecraft:jump.static": {},
 			"minecraft:nameable": {},
 			"minecraft:equipment": {
-				"table": "loot_tables/entities/equipment/bullet_kin.json"
+				"table": "loot_tables/entities/equipment/shotgun_kin.json"
 			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {}

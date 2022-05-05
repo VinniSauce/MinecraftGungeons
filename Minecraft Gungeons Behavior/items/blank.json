@@ -33,7 +33,8 @@
 								"particle gungeon:blank_shockwave ~ ~1 ~",
 								"damage @e[type=!player,r=10] 5 entity_attack entity @p",
 								"clear @s gungeon:blank 0 1",
-								"kill @e[type=gungeon:enemy_bullet,r=10]"
+								"kill @e[type=gungeon:enemy_bullet,r=10]",
+								"kill @e[type=gungeon:enemy_shotgun_bullet,r=10]"
 							]
 						}
 					}

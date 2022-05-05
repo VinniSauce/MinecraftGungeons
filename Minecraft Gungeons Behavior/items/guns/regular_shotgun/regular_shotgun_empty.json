@@ -1,0 +1,69 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gungeon:regular_shotgun_empty",
+			"category": "commands"
+		},
+		"components": {
+			"tag:gun": {},
+			"minecraft:icon": {
+				"texture": "regular_shotgun"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "reload"
+				}
+			},
+			"minecraft:cooldown": {
+				"duration": 1,
+				"category": "regular_shotgun"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false
+		},
+		"events": {
+			"reload": {
+				"sequence": [
+					{
+						"condition": "query.is_item_name_any('slot.inventory', 'gungeon:regular_shotgun_ammo') || query.is_item_name_any('slot.weapon.offhand', 'gungeon:regular_shotgun_ammo') || query.is_item_name_any('slot.hotbar', 'gungeon:regular_shotgun_ammo')",
+						"trigger": {
+							"event": "can_reload"
+						}
+					},
+					{
+						"condition": "!query.is_item_name_any('slot.inventory', 'gungeon:regular_shotgun_ammo') && !query.is_item_name_any('slot.weapon.offhand', 'gungeon:regular_shotgun_ammo') && !query.is_item_name_any('slot.hotbar', 'gungeon:regular_shotgun_ammo')",
+						"trigger": {
+							"event": "cant_reload"
+						}
+					}
+				]
+			},
+			"can_reload": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound regular_shotgun.reload",
+								"replaceitem entity @p slot.weapon.mainhand 0 gungeon:regular_shotgun 1 0",
+								"clear @s gungeon:regular_shotgun_ammo 0 1"
+							]
+						}
+					}
+				]
+			},
+			"cant_reload": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound magnum.empty"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

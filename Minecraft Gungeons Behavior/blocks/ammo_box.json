@@ -1,0 +1,42 @@
+{
+  "format_version": "1.17.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "gungeon:ammo_box"
+    },
+    "components": {
+      "minecraft:creative_category": {
+				"category": "items",
+        "group": "itemGroup.name.misc"
+			},
+      "minecraft:block_light_absorption": 0,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "ammo_box",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:geometry": "geometry.cube_on_ground",
+      "minecraft:entity_collision": false,
+      "minecraft:pick_collision": {
+        "origin": [
+          -4.0,
+          0.0,
+          -4.0
+        ],
+        "size": [
+          8.0,
+          8.0,
+          8.0
+        ]
+      },
+      "minecraft:loot": "loot_tables/ammo.json",
+			"minecraft:explosion_resistance": 2000000000,
+      "minecraft:destroy_time": 1,
+      "minecraft:block_light_emission": 0,
+      "minecraft:map_color": "#ffffff"
+    }
+  }
+}

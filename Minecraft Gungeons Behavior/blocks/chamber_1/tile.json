@@ -1,0 +1,20 @@
+{
+  "format_version": "1.17.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "gungeon:chamber_1_tile"
+    },
+    "components": {
+      "minecraft:creative_category": {
+				"category": "construction",
+        "group": "itemGroup.name.chamber_1_blocks"
+			},
+      "minecraft:loot": "loot_tables/empty.json",
+			"minecraft:explosion_resistance": 2000000000,
+      "minecraft:destroy_time": 2000000000,
+      "minecraft:block_light_emission": 0,
+      "minecraft:map_color": "#ffffff",
+      "minecraft:entity_collision": true
+    }
+  }
+}

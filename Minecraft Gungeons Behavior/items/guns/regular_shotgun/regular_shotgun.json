@@ -1,0 +1,91 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gungeon:regular_shotgun",
+			"category": "equipment"
+		},
+		"components": {
+			"tag:gun": {},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.d_class_guns"
+			},
+			"minecraft:icon": {
+				"texture": "regular_shotgun"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "fire"
+				}
+			},
+			"minecraft:cooldown": {
+				"duration": 0.25,
+				"category": "regular_shotgun"
+			},
+			"minecraft:durability": {
+				"max_durability": 8
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false
+		},
+		"events": {
+			"fire": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound regular_shotgun.fire",
+								"particle gungeon:bullet_casing ^-0.25 ^1 ^"
+							]
+						},
+						"damage": {
+							"type": "none",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"condition": "q.remaining_durability(0) == 1",
+						"trigger": {
+							"event": "ammo_gone"
+						}
+					},
+					{
+						"shoot": {
+							"projectile": "gungeon:regular_shotgun_bullet",
+							"launch_power": 1
+						}
+					},
+					{
+						"shoot": {
+							"projectile": "gungeon:regular_shotgun_bullet",
+							"launch_power": 1
+						}
+					},
+					{
+						"shoot": {
+							"projectile": "gungeon:regular_shotgun_bullet",
+							"launch_power": 1
+						}
+					},
+					{
+						"shoot": {
+							"projectile": "gungeon:regular_shotgun_bullet",
+							"launch_power": 1
+						}
+					}
+				]
+			},
+			"ammo_gone": {
+				"sequence": [
+					{
+						"transform_item": {
+							"transform": "gungeon:regular_shotgun_empty"
+						}
+					}
+				]
+			}
+		}
+	}
+}

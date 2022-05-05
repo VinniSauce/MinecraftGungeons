@@ -8,6 +8,13 @@
             "textures": "textures/items/ammo/default"
         },
 
+        "regular_shotgun": {
+            "textures": "textures/items/guns/regular_shotgun"
+        },
+        "regular_shotgun_ammo": {
+            "textures": "textures/items/ammo/shells"
+        },
+
         "copper_shell": {
             "textures": "textures/items/copper_shell"
         },

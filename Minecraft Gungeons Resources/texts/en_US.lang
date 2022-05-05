@@ -1,16 +1,30 @@
 entity.gungeon:bullet_kin.name=Bullet Kin
 item.spawn_egg.entity.gungeon:bullet_kin.name=Spawn Bullet Kin
 
+entity.gungeon:shotgun_kin.name=Shotgun Kin
+item.spawn_egg.entity.gungeon:shotgun_kin.name=Spawn Shotgun Kin
+
+entity.gungeon:veteran_bullet_kin.name=Veteran Bullet Kin
+item.spawn_egg.entity.gungeon:veteran_bullet_kin.name=Spawn Veteran Bullet Kin
+
+entity.gungeon:veteran_shotgun_kin.name=Veteran Shotgun Kin
+item.spawn_egg.entity.gungeon:veteran_shotgun_kin.name=Spawn Veteran Shotgun Kin
+
+entity.gungeon:blue_shotgun_kin.name=Blue Shotgun Kin
+item.spawn_egg.entity.gungeon:blue_shotgun_kin.name=Spawn Blue Shotgun Kin
+
+tile.gungeon:ammo_box.name=Ammo Box
+
 tile.gungeon:chamber_1_planks.name=Wood Planks (Keep of the Lead Lord)
 tile.gungeon:chamber_1_tile.name=Stone Tile (Keep of the Lead Lord)
 tile.gungeon:chamber_1_tile_small.name=Small Stone Tiles (Keep of the Lead Lord)
 tile.gungeon:chamber_1_wood_pillar.name=Wooden Pillar (Keep of the Lead Lord)
 tile.gungeon:chamber_1_bookshelf.name=Bookshelf (Keep of the Lead Lord)
 tile.gungeon:chamber_1_bricks.name=Stone Bricks (Keep of the Lead Lord)
-tile.gungeon:chamber_1_red_carpet_border.name=Red Border Carpet (Keep of the Lead Lord)
-tile.gungeon:chamber_1_red_carpet_center.name=Red Center Carpet (Keep of the Lead Lord)
-tile.gungeon:chamber_1_blue_carpet_border.name=Blue Border Carpet (Keep of the Lead Lord)
-tile.gungeon:chamber_1_blue_carpet_center.name=Blue Center Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_red_border_carpet.name=Red Border Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_red_center_carpet.name=Red Center Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_blue_border_carpet.name=Blue Border Carpet (Keep of the Lead Lord)
+tile.gungeon:chamber_1_blue_center_carpet.name=Blue Center Carpet (Keep of the Lead Lord)
 
 item.gungeon:copper_shell=Copper Shell
 item.gungeon:silver_shell=Silver Shell
@@ -27,3 +41,7 @@ item.gungeon:half_heart=Half Heart
 item.gungeon:magnum=Magnum
 item.gungeon:magnum_empty=Magnum (Empty)
 item.gungeon:magnum_ammo=Magnum Ammo
+
+item.gungeon:regular_shotgun=Regular Shotgun
+item.gungeon:regular_shotgun_empty=Regular Shotgun (Empty)
+item.gungeon:regular_shotgun_ammo=Regular Shotgun Ammo

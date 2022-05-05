@@ -1,0 +1,116 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bookllet",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "book",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "front_cover",
+					"parent": "book",
+					"pivot": [-2.5, 4, 0],
+					"cubes": [
+						{
+							"origin": [-3, 0, -1],
+							"size": [7, 8, 1],
+							"uv": {
+								"north": {"uv": [1, 8], "uv_size": [7, 8]},
+								"east": {"uv": [0, 8], "uv_size": [1, 8]},
+								"south": {"uv": [9, 8], "uv_size": [7, 8]},
+								"west": {"uv": [8, 8], "uv_size": [1, 8]},
+								"up": {"uv": [1, 7], "uv_size": [7, 1]},
+								"down": {"uv": [8, 8], "uv_size": [7, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "page1",
+					"parent": "book",
+					"pivot": [-2.5, 4, 0],
+					"cubes": [
+						{
+							"origin": [-2.5, 1, 0],
+							"size": [6, 6, 0],
+							"uv": {
+								"north": {"uv": [9, 0], "uv_size": [-6, 6]},
+								"east": {"uv": [9, 0], "uv_size": [0, 6]},
+								"south": {"uv": [15, 0], "uv_size": [-6, 6]},
+								"west": {"uv": [3, 0], "uv_size": [0, 6]},
+								"up": {"uv": [9, 0], "uv_size": [-6, 0]},
+								"down": {"uv": [15, 0], "uv_size": [-6, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "page2",
+					"parent": "book",
+					"pivot": [-2.5, 4, 0],
+					"cubes": [
+						{
+							"origin": [-2.5, 1, 0],
+							"size": [6, 6, 0],
+							"uv": {
+								"north": {"uv": [9, 0], "uv_size": [-6, 6]},
+								"east": {"uv": [9, 0], "uv_size": [0, 6]},
+								"south": {"uv": [15, 0], "uv_size": [-6, 6]},
+								"west": {"uv": [3, 0], "uv_size": [0, 6]},
+								"up": {"uv": [9, 0], "uv_size": [-6, 0]},
+								"down": {"uv": [15, 0], "uv_size": [-6, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "page3",
+					"parent": "book",
+					"pivot": [-2.5, 4, 0],
+					"cubes": [
+						{
+							"origin": [-2.5, 1, 0],
+							"size": [6, 6, 0],
+							"uv": {
+								"north": {"uv": [9, 0], "uv_size": [-6, 6]},
+								"east": {"uv": [9, 0], "uv_size": [0, 6]},
+								"south": {"uv": [15, 0], "uv_size": [-6, 6]},
+								"west": {"uv": [3, 0], "uv_size": [0, 6]},
+								"up": {"uv": [9, 0], "uv_size": [-6, 0]},
+								"down": {"uv": [15, 0], "uv_size": [-6, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "back_cover",
+					"parent": "book",
+					"pivot": [-2.5, 4, 0],
+					"cubes": [
+						{
+							"origin": [-3, 0, 0],
+							"size": [7, 8, 1],
+							"uv": {
+								"north": {"uv": [9, 8], "uv_size": [7, 8]},
+								"east": {"uv": [0, 8], "uv_size": [1, 8]},
+								"south": {"uv": [9, 8], "uv_size": [7, 8]},
+								"west": {"uv": [8, 8], "uv_size": [1, 8]},
+								"up": {"uv": [1, 7], "uv_size": [7, 1]},
+								"down": {"uv": [8, 8], "uv_size": [7, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

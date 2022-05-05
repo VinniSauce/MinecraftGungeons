@@ -1,0 +1,81 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "gungeon:chamber_1_wood_pillar",
+			"properties": {
+				"gungeon:rotation": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('gungeon:rotation') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('gungeon:rotation') == 1",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('gungeon:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						90
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.chamber_1_blocks"
+			},
+			"minecraft:map_color": "#4b4d1b",
+			"minecraft:destroy_time": 4,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "chamber_1_wood_pillar_side",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "chamber_1_wood_pillar_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "chamber_1_wood_pillar_top",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "rotate_event"
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:unit_cube": {}
+		},
+		"events": {
+			"rotate_event": {
+				"set_block_property": {
+					"gungeon:rotation": "math.floor( q.block_face / 2.0 )"
+				}
+			}
+		}
+	}
+}

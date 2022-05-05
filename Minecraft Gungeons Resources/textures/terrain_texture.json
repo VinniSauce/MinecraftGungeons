@@ -4,6 +4,10 @@
     "resource_pack_name": "vanilla",
     "texture_name": "atlas.terrain",
     "texture_data": {
+        "ammo_box": {
+            "textures": "textures/blocks/ammo_box"
+        },
+
         "chamber_1_tile": {
             "textures": {
                 "variations": [
@@ -37,7 +41,7 @@
         "chamber_1_bricks": {
             "textures": "textures/blocks/chamber_1/bricks"
         },
-        "chamber_1_wood_pillar": {
+        "chamber_1_wood_pillar_side": {
             "textures": "textures/blocks/chamber_1/wood_pillar"
         },
         "chamber_1_wood_pillar_top": {

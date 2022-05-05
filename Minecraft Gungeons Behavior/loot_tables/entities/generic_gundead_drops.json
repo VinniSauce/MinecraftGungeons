@@ -34,7 +34,7 @@
                 {
                     "type": "item",
                     "name": "gungeon:half_heart",
-                    "weight": 5,
+                    "weight": 2,
                     "functions": [
                         {
                             "function": "set_count",
@@ -103,7 +103,7 @@
                 },
                 {
                     "type": "empty",
-                    "weight": 65
+                    "weight": 68
                 }
             ]
         }

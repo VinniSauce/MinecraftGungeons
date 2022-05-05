@@ -1,0 +1,55 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "gungeon:chamber_1_bookshelf": {
+        "textures": {
+            "side": "chamber_1_bookshelf",
+            "up": "chamber_1_planks",
+            "down": "chamber_1_planks"
+        },
+        "sound": "wood"
+    },
+    "gungeon:chamber_1_planks": {
+        "textures": "chamber_1_planks",
+        "isotropic": false,
+        "sound": "wood"
+    },
+    "gungeon:chamber_1_bricks": {
+        "textures": "chamber_1_bricks",
+        "isotropic": false,
+        "sound": "stone"
+    },
+    "gungeon:chamber_1_tile": {
+        "textures": "chamber_1_tile",
+        "isotropic": false,
+        "sound": "stone"
+    },
+    "gungeon:chamber_1_tile_small": {
+        "textures": "chamber_1_tile_small",
+        "isotropic": false,
+        "sound": "stone"
+    },
+    "gungeon:chamber_1_red_border_carpet": {
+        "textures": "chamber_1_red_carpet_border",
+        "isotropic": true,
+        "sound": "cloth"
+    },
+    "gungeon:chamber_1_red_center_carpet": {
+        "textures": "chamber_1_red_carpet_center",
+        "isotropic": true,
+        "sound": "cloth"
+    },
+    "gungeon:chamber_1_blue_border_carpet": {
+        "textures": "chamber_1_blue_carpet_border",
+        "isotropic": true,
+        "sound": "cloth"
+    },
+    "gungeon:chamber_1_blue_center_carpet": {
+        "textures": "chamber_1_blue_carpet_center",
+        "isotropic": true,
+        "sound": "cloth"
+    }
+}
