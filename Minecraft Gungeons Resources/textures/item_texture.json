@@ -41,6 +41,59 @@
         },
         "half_heart": {
             "textures": "textures/items/half_heart"
+        },
+
+        "heavy_bullets": {
+            "textures": "textures/items/bullet_upgrades/heavy_bullets"
+        },
+        "frost_bullets": {
+            "textures": "textures/items/bullet_upgrades/frost_bullets"
+        },
+        "hot_lead": {
+            "textures": "textures/items/bullet_upgrades/hot_lead"
+        },
+        "stout_bullets": {
+            "textures": "textures/items/bullet_upgrades/stout_bullets"
+        },
+        "plus1_bullets": {
+            "textures": "textures/items/bullet_upgrades/plus1_bullets"
+        },
+        "alpha_bullets": {
+            "textures": "textures/items/bullet_upgrades/alpha_bullets"
+        },
+        "omega_bullets": {
+            "textures": "textures/items/bullet_upgrades/omega_bullets"
+        },
+
+        "master_round_1": {
+            "textures": "textures/items/health_upgrades/master_round_1"
+        },
+        "master_round_2": {
+            "textures": "textures/items/health_upgrades/master_round_2"
+        },
+        "master_round_3": {
+            "textures": "textures/items/health_upgrades/master_round_3"
+        },
+        "master_round_4": {
+            "textures": "textures/items/health_upgrades/master_round_4"
+        },
+        "master_round_5": {
+            "textures": "textures/items/health_upgrades/master_round_5"
+        },
+        "heart_holster": {
+            "textures": "textures/items/health_upgrades/heart_holster"
+        },
+        "heart_lunchbox": {
+            "textures": "textures/items/health_upgrades/heart_lunchbox"
+        },
+        "heart_locket": {
+            "textures": "textures/items/health_upgrades/heart_locket"
+        },
+        "heart_bottle": {
+            "textures": "textures/items/health_upgrades/heart_bottle"
+        },
+        "heart_purse": {
+            "textures": "textures/items/health_upgrades/heart_purse"
         }
     },
     "texture_name": "atlas.items"
