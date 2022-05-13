@@ -43,26 +43,32 @@
             "textures": "textures/items/half_heart"
         },
 
-        "heavy_bullets": {
-            "textures": "textures/items/bullet_upgrades/heavy_bullets"
-        },
         "frost_bullets": {
-            "textures": "textures/items/bullet_upgrades/frost_bullets"
+            "textures": "textures/items/passives/frost_bullets"
         },
         "hot_lead": {
-            "textures": "textures/items/bullet_upgrades/hot_lead"
+            "textures": "textures/items/passives/hot_lead"
         },
         "stout_bullets": {
-            "textures": "textures/items/bullet_upgrades/stout_bullets"
+            "textures": "textures/items/passives/stout_bullets"
         },
         "plus1_bullets": {
-            "textures": "textures/items/bullet_upgrades/plus1_bullets"
+            "textures": "textures/items/passives/plus1_bullets"
         },
         "alpha_bullets": {
-            "textures": "textures/items/bullet_upgrades/alpha_bullets"
+            "textures": "textures/items/passives/alpha_bullets"
         },
         "omega_bullets": {
-            "textures": "textures/items/bullet_upgrades/omega_bullets"
+            "textures": "textures/items/passives/omega_bullets"
+        },
+        "gungeon_pepper": {
+            "textures": "textures/items/passives/gungeon_pepper"
+        },
+        "shotgun_coffee": {
+            "textures": "textures/items/passives/shotgun_coffee"
+        },
+        "shotgun_cola": {
+            "textures": "textures/items/passives/shotgun_cola"
         },
 
         "master_round_1": {

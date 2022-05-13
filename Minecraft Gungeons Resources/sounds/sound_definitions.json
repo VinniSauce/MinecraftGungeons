@@ -88,5 +88,11 @@
     "sounds": [
       "sounds/guns/regular_shotgun/reload_01"
     ]
+  },
+  "passive_item.equip": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/passive_item_equip"
+    ]
   }
 }

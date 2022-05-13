@@ -7,53 +7,162 @@
       "is_summonable": false,
       "is_experimental": false
     },
-
     "component_groups": {
-      "minecraft:add_bad_omen": {
-        "minecraft:spell_effects": {
-          "add_effects": [
-            {
-              "effect": "bad_omen",
-              "duration": 6000,
-              "visible": false,
-              "display_on_screen_animation": true
-            }
-          ]
+      "minecraft:plus_1_heart": {
+        "minecraft:mark_variant": {
+          "value": 1
         },
-        "minecraft:timer": {
-          "time": [ 0.0, 0.0 ],
-          "looping": false,
-          "time_down_event": {
-            "event": "minecraft:clear_add_bad_omen",
-            "target": "self"
-          }
+        "minecraft:health": {
+          "value": 8,
+          "max": 8
         }
       },
-      "minecraft:clear_bad_omen_spell_effect": {
-        "minecraft:spell_effects": {
+      "minecraft:plus_2_heart": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:health": {
+          "value": 10,
+          "max": 10
         }
       },
-      "minecraft:raid_trigger": {
-        "minecraft:raid_trigger": {
-          "triggered_event": {
-            "event": "minecraft:remove_raid_trigger",
-            "target": "self"
-          }
+      "minecraft:plus_3_heart": {
+        "minecraft:mark_variant": {
+          "value": 3
         },
-        "minecraft:spell_effects": {
-          "remove_effects": "bad_omen"
+        "minecraft:health": {
+          "value": 12,
+          "max": 12
         }
+      },
+      "minecraft:plus_4_heart": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:health": {
+          "value": 14,
+          "max": 14
+        }
+      },
+      "minecraft:plus_5_heart": {
+        "minecraft:mark_variant": {
+          "value": 5
+        },
+        "minecraft:health": {
+          "value": 16,
+          "max": 16
+        }
+      },
+      "minecraft:plus_6_heart": {
+        "minecraft:mark_variant": {
+          "value": 6
+        },
+        "minecraft:health": {
+          "value": 18,
+          "max": 18
+        }
+      },
+      "minecraft:plus_7_heart": {
+        "minecraft:mark_variant": {
+          "value": 7
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "minecraft:plus_8_heart": {
+        "minecraft:mark_variant": {
+          "value": 8
+        },
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        }
+      },
+      "minecraft:plus_9_heart": {
+        "minecraft:mark_variant": {
+          "value": 9
+        },
+        "minecraft:health": {
+          "value": 24,
+          "max": 24
+        }
+      },
+      "minecraft:plus_10_heart": {
+        "minecraft:mark_variant": {
+          "value": 10
+        },
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        }
+      },
+      "minecraft:one_speed_upgrade": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:movement": {
+          "value": 0.125
+        }
+      },
+      "minecraft:two_speed_upgrades": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:movement": {
+          "value": 0.15
+        }
+      },
+      "minecraft:gungeon_pepper": {
+				"minecraft:area_attack": {
+					"damage_range": 4,
+					"damage_per_tick": 2,
+					"cause": "fire",
+					"entity_filter": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "gundead"
+							}
+						]
+					}
+				}
+			},
+      "minecraft:frost_bullets": {
+        "minecraft:is_illager_captain": {}
+      },
+      "minecraft:stout_bullets": {
+        "minecraft:is_tamed": {}
+      },
+      "minecraft:alpha_bullets": {
+        "minecraft:is_saddled": {}
+      },
+      "minecraft:omega_bullets": {
+        "minecraft:is_sheared": {}
+      },
+      "minecraft:plus1_bullets": {
+        "minecraft:is_charged": {}
+      },
+      "minecraft:hot_lead": {
+        "minecraft:is_stunned": {}
       }
     },
-
     "components": {
       "minecraft:experience_reward": {
         "on_death": "Math.Min(query.player_level * 7, 100)"
       },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
       "minecraft:health": {
-				"value": 6,
-				"max": 6
-			},
+        "value": 6,
+        "max": 6
+      },
       "minecraft:spell_effects": {
         "add_effects": [
           {
@@ -65,10 +174,11 @@
         ]
       },
       "minecraft:type_family": {
-        "family": [ "player" ]
+        "family": [
+          "player"
+        ]
       },
-      "minecraft:is_hidden_when_invisible": {
-      },
+      "minecraft:is_hidden_when_invisible": {},
       "minecraft:loot": {
         "table": "loot_tables/empty.json"
       },
@@ -76,15 +186,19 @@
         "width": 0.6,
         "height": 1.8
       },
-      "minecraft:can_climb": {
-      },
+      "minecraft:can_climb": {},
       "minecraft:movement": {
         "value": 0.1
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -118,8 +232,7 @@
         "always_show": true,
         "allow_name_tag_renaming": false
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true
@@ -135,77 +248,188 @@
         "pull_in_entities": true,
         "seats": [
           {
-            "position": [ 0.4, -0.2, -0.1 ],
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
             "min_rider_count": 0,
             "max_rider_count": 0,
             "lock_rider_rotation": 0
           },
           {
-            "position": [ -0.4, -0.2, -0.1 ],
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
             "min_rider_count": 1,
             "max_rider_count": 2,
             "lock_rider_rotation": 0
           }
         ]
       },
-      "minecraft:conditional_bandwidth_optimization": {
-      },
-      "minecraft:block_climber": {},
-      "minecraft:environment_sensor": {
-        "triggers": {
-          "filters": {
-            "all_of": [
-              {
-                "test": "has_mob_effect",
-                "subject": "self",
-                "value": "bad_omen"
-              },
-              {
-                "test": "is_in_village",
-                "subject": "self",
-                "value": true
-              }
-            ]
-          },
-          "event": "minecraft:trigger_raid"
-        }
-      }
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:block_climber": {}
     },
-
     "events": {
-      "minecraft:gain_bad_omen": {
-        "add": {
-          "component_groups": [
-            "minecraft:add_bad_omen"
-          ]
-        }
-      },
-      "minecraft:clear_add_bad_omen": {
+      "minecraft:player_death": {
         "remove": {
           "component_groups": [
-            "minecraft:add_bad_omen"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:clear_bad_omen_spell_effect"
+            "minecraft:plus_1_heart",
+            "minecraft:plus_2_heart",
+            "minecraft:plus_3_heart",
+            "minecraft:plus_4_heart",
+            "minecraft:plus_5_heart",
+            "minecraft:plus_6_heart",
+            "minecraft:plus_7_heart",
+            "minecraft:plus_8_heart",
+            "minecraft:plus_9_heart",
+            "minecraft:plus_10_heart",
+            "minecraft:one_speed_upgrade",
+            "minecraft:two_speed_upgrades",
+            "minecraft:frost_bullets",
+            "minecraft:stout_bullets",
+            "minecraft:alpha_bullets",
+            "minecraft:omega_bullets",
+            "minecraft:plus1_bullets",
+            "minecraft:hot_lead"
           ]
         }
       },
-      "minecraft:trigger_raid": {
-        "add": {
-          "component_groups": [ "minecraft:raid_trigger" ]
-        }
-      },
-      "minecraft:remove_raid_trigger": {
+      "add_passive:plus1_bullets": {
         "remove": {
-          "component_groups": [ "minecraft:raid_trigger" ]
+          "component_groups": [
+            "minecraft:plus1_bullets"
+          ]
+        }
+      },
+      "add_passive:omega_bullets": {
+        "remove": {
+          "component_groups": [
+            "minecraft:omega_bullets"
+          ]
+        }
+      },
+      "add_passive:alpha_bullets": {
+        "remove": {
+          "component_groups": [
+            "minecraft:alpha_bullets"
+          ]
+        }
+      },
+      "add_passive:stout_bullets": {
+        "remove": {
+          "component_groups": [
+            "minecraft:stout_bullets"
+          ]
+        }
+      },
+      "add_passive:frost_bullets": {
+        "remove": {
+          "component_groups": [
+            "minecraft:frost_bullets"
+          ]
+        }
+      },
+      "add_passive:hot_lead": {
+        "remove": {
+          "component_groups": [
+            "minecraft:hot_lead"
+          ]
+        }
+      },
+      "add_passive:1st_speed_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:one_speed_upgrade"
+          ]
+        }
+      },
+      "add_passive:2nd_speed_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:two_speed_upgrades"
+          ]
+        }
+      },
+      "add_passive:gungeon_pepper": {
+        "remove": {
+          "component_groups": [
+            "minecraft:gungeon_pepper"
+          ]
+        }
+      },
+      "add_passive:1st_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_1_heart"
+          ]
+        }
+      },
+      "add_passive:2nd_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_2_heart"
+          ]
+        }
+      },
+      "add_passive:3rd_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_3_heart"
+          ]
+        }
+      },
+      "add_passive:4th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_4_heart"
+          ]
+        }
+      },
+      "add_passive:5th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_5_heart"
+          ]
+        }
+      },
+      "add_passive:6th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_6_heart"
+          ]
+        }
+      },
+      "add_passive:7th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_7_heart"
+          ]
+        }
+      },
+      "add_passive:8th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_8_heart"
+          ]
+        }
+      },
+      "add_passive:9th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_9_heart"
+          ]
+        }
+      },
+      "add_passive:10th_health_upgrade": {
+        "remove": {
+          "component_groups": [
+            "minecraft:plus_10_heart"
+          ]
         }
       }
     }
   }
 }
-
-
-
-

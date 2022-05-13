@@ -38,6 +38,27 @@ item.gungeon:hegemony_credit=Hegemony Credit
 item.gungeon:heart=Heart
 item.gungeon:half_heart=Half Heart
 
+item.gungeon:plus1_bullets=+1 Bullets
+item.gungeon:alpha_bullets=Alpha Bullets
+item.gungeon:omega_bullets=Omega Bullets
+item.gungeon:stout_bullets=Stout Bullets
+item.gungeon:frost_bullets=Frost Bullets
+item.gungeon:hot_lead=Hot Lead
+item.gungeon:shotgun_cola=Shotgun Cola
+item.gungeon:shotgun_coffee=Shotgun Coffee
+item.gungeon:gungeon_pepper=Gungeon Pepper
+
+item.gungeon:master_round_1=Master Round : Chamber 1
+item.gungeon:master_round_2=Master Round : Chamber 2
+item.gungeon:master_round_3=Master Round : Chamber 3
+item.gungeon:master_round_4=Master Round : Chamber 4
+item.gungeon:master_round_5=Master Round : Chamber 5
+item.gungeon:heart_holster=Heart Holster
+item.gungeon:heart_bottle=Heart Bottle
+item.gungeon:heart_locket=Heart Locket
+item.gungeon:heart_purse=Heart Purse
+item.gungeon:heart_lunchbox=Heart Lunchbox
+
 item.gungeon:magnum=Magnum
 item.gungeon:magnum_empty=Magnum (Empty)
 item.gungeon:magnum_ammo=Magnum Ammo

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gungeon:plus1_bullets",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.passive_items"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "add_passive"
+				}
+			},
+			"minecraft:cooldown": {
+				"duration": 1,
+				"category": "add_passive"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "plus1_bullets"
+			}
+		},
+		"events": {
+			"blank": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound passive_item.equip",
+								"clear @s gungeon:plus1_bullets 0 1",
+								"event entity @p add_passive:plus1_bullets"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}
